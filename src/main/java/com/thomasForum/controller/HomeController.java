@@ -3,6 +3,7 @@ package com.thomasForum.controller;
 
 
 import com.thomasForum.entity.DiscussPost;
+import com.thomasForum.entity.Page;
 import com.thomasForum.entity.User;
 import com.thomasForum.service.DiscussPostService;
 import com.thomasForum.service.UserService;
@@ -25,8 +26,10 @@ public class HomeController {
     private UserService userService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
-    public String getIndexPage(Model model){
-        List <DiscussPost> discussList = discussPostService.findDiscussPosts(0,0,10);
+    public String getIndexPage(Model model, Page page){
+        page.setRows(discussPostService.findDiscussPostRows(1));
+        page.setPath("/index");
+        List<DiscussPost> discussList = discussPostService.findDiscussPosts(1,page.getOffset(),page.getLimit());
         List<Map<String,Object>> postAndUser = new ArrayList<>();
         if(discussList!=null){
             for(DiscussPost dp : discussList){

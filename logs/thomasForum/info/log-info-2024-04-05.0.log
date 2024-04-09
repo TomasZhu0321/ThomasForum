@@ -1,0 +1,37 @@
+2024-04-05 12:53:53,943 INFO [main] c.t.LoggerTests [StartupInfoLogger.java:50] Starting LoggerTests using Java 17.0.9 with PID 80415 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 12:53:53,951 INFO [main] c.t.LoggerTests [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 12:53:54,656 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 12:53:54,828 INFO [main] c.t.LoggerTests [StartupInfoLogger.java:56] Started LoggerTests in 1.099 seconds (process running for 1.868)
+2024-04-05 12:53:55,255 INFO [main] c.t.LoggerTests [LoggerTests.java:17] info
+2024-04-05 12:54:58,642 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 80808 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 12:54:58,643 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 12:54:59,291 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 12:54:59,448 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.987 seconds (process running for 1.446)
+2024-04-05 12:56:00,855 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 81194 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 12:56:00,856 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 12:56:01,446 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 12:56:01,600 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.915 seconds (process running for 1.404)
+2024-04-05 13:05:23,244 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 84688 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 13:05:23,245 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 13:05:23,896 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 13:05:24,045 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.982 seconds (process running for 1.702)
+2024-04-05 13:06:19,755 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 85036 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 13:06:19,756 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 13:06:20,475 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 13:06:20,620 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 1.04 seconds (process running for 1.53)
+2024-04-05 13:06:33,078 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 85116 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 13:06:33,079 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 13:06:34,524 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 13:06:34,677 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 1.901 seconds (process running for 2.386)
+2024-04-05 13:23:16,226 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 91186 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 13:23:16,228 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 13:23:16,843 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 13:23:17,004 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.953 seconds (process running for 1.466)
+2024-04-05 14:22:46,934 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 99728 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 14:22:46,935 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 14:22:47,561 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 14:22:47,717 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.986 seconds (process running for 1.462)
+2024-04-05 14:23:52,949 INFO [main] c.t.MailTest [StartupInfoLogger.java:50] Starting MailTest using Java 17.0.9 with PID 242 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-05 14:23:52,950 INFO [main] c.t.MailTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-05 14:23:53,563 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-05 14:23:53,732 INFO [main] c.t.MailTest [StartupInfoLogger.java:56] Started MailTest in 0.959 seconds (process running for 1.465)

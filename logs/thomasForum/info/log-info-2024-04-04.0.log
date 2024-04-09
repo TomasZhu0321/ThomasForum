@@ -1,0 +1,5 @@
+2024-04-04 19:51:26,952 INFO [main] c.t.LoggerTests [StartupInfoLogger.java:50] Starting LoggerTests using Java 17.0.9 with PID 11777 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-04 19:51:26,953 INFO [main] c.t.LoggerTests [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-04 19:51:27,549 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-04 19:51:27,706 INFO [main] c.t.LoggerTests [StartupInfoLogger.java:56] Started LoggerTests in 0.929 seconds (process running for 1.451)
+2024-04-04 19:51:28,105 INFO [main] c.t.LoggerTests [LoggerTests.java:17] info
