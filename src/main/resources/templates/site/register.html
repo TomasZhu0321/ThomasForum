@@ -6,7 +6,7 @@
 	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" th:href="@{/css/global.css}"/>
-	<link rel="stylesheet" th:href="@{/css/login.csss}"/>
+	<link rel="stylesheet" th:href="@{/css/login.css}"/>
 	<title>Thomas Forum - Register</title>
 </head>
 <body>
@@ -14,54 +14,54 @@
 		<!-- 头部 -->
 		<header class="bg-dark sticky-top" th:replace="index::header">
 		</header>
-		<!-- 内容 -->
+		<!--		 内容 -->
 		<div class="main">
 			<div class="container pl-5 pr-5 pt-3 pb-3 mt-3 mb-3">
-				<h3 class="text-center text-info border-bottom pb-3">注&nbsp;&nbsp;册</h3>
-				<form class="mt-5">
+				<h3 class="text-center text-info border-bottom pb-3"> Register </h3>
+				<form class="mt-5" th:action="@{/register}" method="post" >
 					<div class="form-group row">
-						<label for="username" class="col-sm-2 col-form-label text-right">账号:</label>
+						<label for="username" class="col-sm-2 col-form-label text-right">Account :</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="username" placeholder="请输入您的账号!" required>
-							<div class="invalid-feedback">
-								该账号已存在!
+							<input type="text" th:class="|form-control ${usernameMsg !=null ? 'is-invalid':''}|" id="username" placeholder="Please input your account ..." name="username" th:value="${user!= null ? user.username : ''}" required>
+							<div class="invalid-feedback" th:text="${usernameMsg}">
+								Sorry, this Account exists already..
 							</div>
 						</div>
 					</div>
 					<div class="form-group row mt-4">
-						<label for="password" class="col-sm-2 col-form-label text-right">密码:</label>
+						<label for="password" class="col-sm-2 col-form-label text-right">Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="password" placeholder="请输入您的密码!" required>
-							<div class="invalid-feedback">
-								密码长度不能小于8位!
-							</div>							
+							<input type="password" th:class="|form-control ${passwordMsg!=null ? 'is-invalid':''}|" id="password" placeholder="Please input your password ... " name="password" th:value="${user != null ? user.password : ''}" required>
+							<div class="invalid-feedback" th:text="${passwordMsg}" >
+								The password length should not be less than 8 characters...
+							</div>
 						</div>
 					</div>
 					<div class="form-group row mt-4">
-						<label for="confirm-password" class="col-sm-2 col-form-label text-right">确认密码:</label>
+						<label for="confirm-password" class="col-sm-2 col-form-label text-right">Confirm Password:</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="confirm-password" placeholder="请再次输入密码!" required>
+							<input type="password" class="form-control" id="confirm-password" placeholder="Please input your password again!" th:value="${user != null ? user.password : ''}" required>
 							<div class="invalid-feedback">
-								两次输入的密码不一致!
+								The two passwords are not the same!
 							</div>
 						</div>
 					</div>
 					<div class="form-group row">
-						<label for="email" class="col-sm-2 col-form-label text-right">邮箱:</label>
+						<label for="email" class="col-sm-2 col-form-label text-right">Email:</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="email" placeholder="请输入您的邮箱!" required>
-							<div class="invalid-feedback">
-								该邮箱已注册!
+							<input type="email" th:class="|form-control ${emailMsg!=null ? 'is-invalid':''}|" id="email" placeholder="Please input your email..." name="email" th:value="${user != null ? user.email:''}" required>
+							<div class="invalid-feedback" th:text="${emailMsg}">
+								Sorry, this email has been registered!
 							</div>
 						</div>
 					</div>
 					<div class="form-group row mt-4">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-10 text-center">
-							<button type="submit" class="btn btn-info text-white form-control">立即注册</button>
+							<button type="submit" class="btn btn-info text-white form-control">Register Now</button>
 						</div>
 					</div>
-				</form>				
+				</form>
 			</div>
 		</div>
 
