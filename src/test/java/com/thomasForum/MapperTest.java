@@ -2,8 +2,10 @@ package com.thomasForum;
 
 import com.thomasForum.dao.AlphaDao;
 import com.thomasForum.dao.DiscussPostMapper;
+import com.thomasForum.dao.LoginTicketMapper;
 import com.thomasForum.dao.UserMapper;
 import com.thomasForum.entity.DiscussPost;
+import com.thomasForum.entity.LoginTicket;
 import com.thomasForum.entity.User;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Date;
 import java.util.List;
 
 
@@ -20,6 +23,8 @@ import java.util.List;
 public class MapperTest {
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
 
     @Autowired
     private DiscussPostMapper discussPostMapper;
@@ -38,5 +43,21 @@ public class MapperTest {
         for(DiscussPost dp : page){
             System.out.println(dp);
         }
+    }
+
+    @Test
+    public void testLoginTicketinsert(){
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setTicket("abccc");
+        loginTicket.setUserId(1);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + 1000 * 60 * 10));
+        loginTicket.setStatus(1);
+        loginTicketMapper.insertLoginTicket(loginTicket);
+    }
+    @Test
+    public void testLoginTicketselct(){
+
+       LoginTicket result = loginTicketMapper.selectLoginTicket("abccc");
+       loginTicketMapper.updateLoginTicket("abccc",0);
     }
 }
