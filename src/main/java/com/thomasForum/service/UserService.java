@@ -1,6 +1,8 @@
 package com.thomasForum.service;
 
+import com.thomasForum.dao.LoginTicketMapper;
 import com.thomasForum.dao.UserMapper;
+import com.thomasForum.entity.LoginTicket;
 import com.thomasForum.entity.User;
 import com.thomasForum.util.MailClient;
 import com.thomasForum.util.ThomasForumConstant;
@@ -21,6 +23,9 @@ import java.util.Random;
 public class UserService implements ThomasForumConstant {
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private LoginTicketMapper loginTicketMapper;
 
     @Autowired
     private MailClient mailClient;
@@ -75,6 +80,40 @@ public class UserService implements ThomasForumConstant {
         return map;
     }
 
+    public Map<String,Object> login(String username, String password, int expiredSeconds){
+        Map<String, Object> map = new HashMap<>();
+        if(StringUtils.isBlank(username)){
+            map.put("usernameMsg", "Username cannot be null!");
+            return map;
+        }
+        if(StringUtils.isBlank(password)){
+            map.put("passwordMsg", "Password cannot be null!");
+            return map;
+        }
+        User user = userMapper.selectByName(username);
+        if(user == null){
+            map.put("usernameMsg","This user is not existing!");
+            return map;
+        }
+        if(user.getStatus() == 0){
+            map.put("usernameMsg","This account has not been activated yet!");
+            return map;
+        }
+        if(!user.getPassword().equals(ThomasforumUtil.md5(password) + user.getSalt())){
+            map.put("passwordMsg","Password is incorrect!");
+            return map;
+        }
+        LoginTicket loginTicket = new LoginTicket();
+        loginTicket.setStatus(0);
+        loginTicket.setExpired(new Date(System.currentTimeMillis() + expiredSeconds * 1000));
+        loginTicket.setUserId(user.getId());
+        loginTicket.setTicket(ThomasforumUtil.generateUUID());
+        loginTicketMapper.insertLoginTicket(loginTicket);
+
+        map.put("ticket",loginTicket.getTicket());
+        return map;
+    }
+
     public int activation(int userId, String code){
         User user = userMapper.selectById(userId);
         if(user.getStatus() == 1){
@@ -88,4 +127,6 @@ public class UserService implements ThomasForumConstant {
             return ACTIVATION_FAILURE;
         }
     }
+
+
 }
