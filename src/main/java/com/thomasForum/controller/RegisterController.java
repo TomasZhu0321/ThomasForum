@@ -5,17 +5,16 @@ import com.thomasForum.entity.Page;
 import com.thomasForum.entity.User;
 import com.thomasForum.service.UserService;
 import com.thomasForum.util.ThomasForumConstant;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -44,7 +43,7 @@ public class RegisterController implements ThomasForumConstant {
     public String register(Model model, User user){
         Map<String, Object> map = userService.register(user);
         if(map == null || map.isEmpty()){
-            model.addAttribute("msg","Your account has been successfully activated! Now you can explore the thomas forum :)");
+            model.addAttribute("msg","We've sent you the activation link in your email, please activate your account!");
             model.addAttribute("target","/index");
             return "/site/operate-result";
         }
@@ -88,5 +87,41 @@ public class RegisterController implements ThomasForumConstant {
         } catch (IOException e) {
             logger.error("Generating Kaptcha failed : " + e.getMessage());
         }
+    }
+
+    /**
+     * 1. submit login info, verify matching
+     * 2. get kaptcha, and check whether matching or not in session
+     * 3. process error from map
+     * 4. create ticket as token
+     * @return
+     */
+    @RequestMapping(path = "/login", method = RequestMethod.POST)
+    public String login(String username, String password, String code, boolean rememberme, Model model, HttpSession session, HttpServletResponse response){
+        String kaptcha = (String) session.getAttribute("kaptcha");
+        if(StringUtils.isBlank(code) || StringUtils.isBlank(kaptcha) || !code.equals(kaptcha)){
+            model.addAttribute("codeMsg", "Verification Code is wrong!");
+            return "/site/login";
+        }
+        int expiredSeconds = rememberme == true ? REMEMBER_EXPIRED_SECONDS: DEFAULT_EXPIRED_SECONDS;
+        Map<String,Object > map = userService.login(username,password,expiredSeconds);
+        //do have ticket
+        if(map.containsKey("ticket")){
+            Cookie cookie = new Cookie("ticket",map.get("ticket").toString());
+            cookie.setPath("/");
+            cookie.setMaxAge(expiredSeconds);
+            response.addCookie(cookie);
+            return "redirect:/index";
+        }else {
+            model.addAttribute("usernameMsg",map.get("usernameMsg"));
+            model.addAttribute("passwordMsg",map.get("passwordMsg"));
+            return "/site/login";
+        }
+    }
+    @RequestMapping(path = "/logout",method = RequestMethod.GET)
+    public String logout(@CookieValue("ticket") String ticket){
+        userService.logout(ticket);
+        return "redirect:/login";
+
     }
 }

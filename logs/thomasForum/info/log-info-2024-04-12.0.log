@@ -1,0 +1,54 @@
+2024-04-12 14:13:41,280 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 16732 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:13:41,285 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:13:42,352 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:13:42,573 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.659 seconds (process running for 2.668)
+2024-04-12 14:13:43,158 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:13:43,309 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d3f6ad
+2024-04-12 14:13:43,310 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:13:43,394 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:13:43,401 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-12 14:14:12,932 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 16937 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:14:12,934 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:14:13,873 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:14:14,092 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.452 seconds (process running for 2.319)
+2024-04-12 14:14:14,641 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:14:14,742 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b8a0d03
+2024-04-12 14:14:14,743 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:14:14,802 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:14:14,807 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-12 14:15:38,687 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 17451 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:15:38,689 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:15:39,855 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:15:40,063 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.661 seconds (process running for 2.572)
+2024-04-12 14:15:40,605 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:15:40,708 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ad40184
+2024-04-12 14:15:40,709 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:15:40,782 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:15:40,786 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-12 14:16:06,105 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 17616 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:16:06,107 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:16:07,046 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:16:07,277 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.46 seconds (process running for 2.281)
+2024-04-12 14:16:07,835 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:16:07,950 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16949dfa
+2024-04-12 14:16:07,952 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:16:08,016 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:16:08,020 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-12 14:16:15,472 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 17689 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:16:15,473 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:16:16,384 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:16:16,597 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.437 seconds (process running for 2.543)
+2024-04-12 14:16:17,106 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:16:17,208 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@422ba9b7
+2024-04-12 14:16:17,210 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:16:17,273 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:16:17,277 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-12 14:16:58,541 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 17941 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-12 14:16:58,543 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-12 14:16:59,496 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-12 14:16:59,722 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.47 seconds (process running for 2.304)
+2024-04-12 14:17:00,243 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-12 14:17:00,342 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8ee03f5
+2024-04-12 14:17:00,343 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-12 14:17:00,438 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-12 14:17:00,442 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

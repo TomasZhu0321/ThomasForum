@@ -1,0 +1,55 @@
+2024-04-16 15:23:27,924 INFO [main] c.t.MapperTest [StartupInfoLogger.java:50] Starting MapperTest using Java 17.0.9 with PID 2123 (started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-16 15:23:27,928 INFO [main] c.t.MapperTest [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-16 15:23:28,893 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-16 15:23:29,102 INFO [main] c.t.MapperTest [StartupInfoLogger.java:56] Started MapperTest in 1.469 seconds (process running for 2.432)
+2024-04-16 15:23:29,658 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-16 15:23:29,791 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@422ba9b7
+2024-04-16 15:23:29,792 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-16 15:23:29,891 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-16 15:23:29,897 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-16 15:23:36,855 INFO [restartedMain] c.t.ThomasForumApplication [StartupInfoLogger.java:50] Starting ThomasForumApplication using Java 17.0.9 with PID 2181 (/Users/tomas/Desktop/thomasForum/target/classes started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-16 15:23:36,856 INFO [restartedMain] c.t.ThomasForumApplication [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-16 15:23:36,889 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-16 15:23:36,889 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-16 15:23:37,546 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 8080 (http)
+2024-04-16 15:23:37,552 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-16 15:23:37,553 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-04-16 15:23:37,553 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-16 15:23:37,577 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-04-16 15:23:37,578 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 688 ms
+2024-04-16 15:23:37,815 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-16 15:23:37,999 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2024-04-16 15:23:38,016 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-16 15:23:38,028 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 8080 (http) with context path ''
+2024-04-16 15:23:38,038 INFO [restartedMain] c.t.ThomasForumApplication [StartupInfoLogger.java:56] Started ThomasForumApplication in 1.547 seconds (process running for 2.231)
+2024-04-16 15:23:46,867 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-16 15:23:46,868 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2024-04-16 15:23:46,869 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2024-04-16 15:23:46,921 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-16 15:23:47,015 INFO [http-nio-8080-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25745769
+2024-04-16 15:23:47,016 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-16 15:34:22,438 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-16 15:34:22,450 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2024-04-16 15:46:26,328 INFO [restartedMain] c.t.ThomasForumApplication [StartupInfoLogger.java:50] Starting ThomasForumApplication using Java 17.0.9 with PID 10673 (/Users/tomas/Desktop/thomasForum/target/classes started by tomas in /Users/tomas/Desktop/thomasForum)
+2024-04-16 15:46:26,333 INFO [restartedMain] c.t.ThomasForumApplication [SpringApplication.java:654] No active profile set, falling back to 1 default profile: "default"
+2024-04-16 15:46:26,388 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-16 15:46:26,388 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-16 15:46:27,506 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:109] Tomcat initialized with port 8080 (http)
+2024-04-16 15:46:27,513 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-16 15:46:27,514 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2024-04-16 15:46:27,515 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-16 15:46:27,545 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2024-04-16 15:46:27,545 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:296] Root WebApplicationContext: initialization completed in 1156 ms
+2024-04-16 15:46:27,820 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:59] Adding welcome page template: index
+2024-04-16 15:46:28,018 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2024-04-16 15:46:28,033 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2024-04-16 15:46:28,047 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:241] Tomcat started on port 8080 (http) with context path ''
+2024-04-16 15:46:28,058 INFO [restartedMain] c.t.ThomasForumApplication [StartupInfoLogger.java:56] Started ThomasForumApplication in 3.662 seconds (process running for 5.114)
+2024-04-16 15:46:29,244 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-16 15:46:29,244 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2024-04-16 15:46:29,246 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2024-04-16 15:46:29,290 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2024-04-16 15:46:29,399 INFO [http-nio-8080-exec-2] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51efbaf2
+2024-04-16 15:46:29,400 INFO [http-nio-8080-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2024-04-16 15:48:57,345 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2024-04-16 15:48:57,355 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.

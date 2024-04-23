@@ -38,6 +38,9 @@ public class UserService implements ThomasForumConstant {
         return userMapper.selectById(id);
     }
 
+    public LoginTicket findLoginTicket(String ticket){
+        return loginTicketMapper.selectLoginTicket(ticket);
+    }
     public Map<String, Object> register(User user){
         Map <String, Object > map = new HashMap<>();
         if (user == null) {
@@ -109,7 +112,6 @@ public class UserService implements ThomasForumConstant {
         loginTicket.setUserId(user.getId());
         loginTicket.setTicket(ThomasforumUtil.generateUUID());
         loginTicketMapper.insertLoginTicket(loginTicket);
-
         map.put("ticket",loginTicket.getTicket());
         return map;
     }
@@ -128,5 +130,8 @@ public class UserService implements ThomasForumConstant {
         }
     }
 
+    public void logout(String ticket){
+        loginTicketMapper.updateLoginTicket(ticket,1);
+    }
 
 }
