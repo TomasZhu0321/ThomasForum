@@ -4,6 +4,7 @@ import com.thomasForum.dao.LoginTicketMapper;
 import com.thomasForum.dao.UserMapper;
 import com.thomasForum.entity.LoginTicket;
 import com.thomasForum.entity.User;
+import com.thomasForum.util.HostHolder;
 import com.thomasForum.util.MailClient;
 import com.thomasForum.util.ThomasForumConstant;
 import com.thomasForum.util.ThomasforumUtil;
@@ -134,4 +135,34 @@ public class UserService implements ThomasForumConstant {
         loginTicketMapper.updateLoginTicket(ticket,1);
     }
 
+    public int updateHeader(int userId, String headerUrl){
+        return userMapper.updateHeader(userId,headerUrl);
+    }
+    public Map<String,Object> updatePassword(int userId, String oldPassword, String newPassword, String confirmPassword){
+        User user = userMapper.selectById(userId);
+        Map<String, Object> map = new HashMap<>();
+        if(StringUtils.isBlank(oldPassword)){
+            map.put("passwordMsg","Old Password cannot be null!");
+            return map;
+        }
+        if(StringUtils.isBlank(newPassword)){
+            map.put("passwordMsg","New Password cannot be null!");
+            return map;
+        }
+        if(StringUtils.isBlank(confirmPassword)){
+            map.put("passwordMsg","Confirm Password cannot be null!");
+            return map;
+        }
+        if(!user.getPassword().equals(ThomasforumUtil.md5(oldPassword) + user.getSalt())){
+            map.put("passwordMsg","Old Password is incorrect!");
+            return map;
+        }
+        if(!confirmPassword.equals(newPassword)){
+            map.put("passwordMsg","Passwords inputted are not the same!");
+            return map;
+        }
+        String password = ThomasforumUtil.md5(newPassword) +user.getSalt();
+        userMapper.updatePassword(userId,password);
+        return map;
+    }
 }

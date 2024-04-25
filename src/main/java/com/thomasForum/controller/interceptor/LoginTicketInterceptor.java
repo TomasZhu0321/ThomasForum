@@ -36,10 +36,8 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
         }
         return true;
     }
-
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
         User user = hostHolder.getUser();
         if(user!=null && modelAndView != null){
             modelAndView.addObject("loginUser", user);
@@ -48,7 +46,6 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
-        HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
         hostHolder.clear();
     }
 
